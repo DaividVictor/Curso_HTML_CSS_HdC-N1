@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="nome" value="Victor">
+      <!-- Value = Permite que o campo seja preenchido pelo Desenvolvedor da página. -->
+      <br><br>
+      <input type="text" name="nome" placeholder="Digite seu nome.">
+      <!-- Placeholder = Fornece uma dica ao usuário do que ele pode inserir. O texto do atributo não deve conter quebras de linha. Este atributo é aplicado quando o valor do atributo "type" é [text], [search], [tel], [url] ou [email]; caso contrário, ele é ignorado.
+      NOTA: Não use o atributo "placeholder" no lugar de um elemento <label>. Os propósitos de cada um são diferentes: o atributo <label> descreve o papel do elemento no formulário, isto é, ele indica que tipo de informação é esperada. Já o atributo "placeholder" é uma dica sobre o formato que o conteúdo deveria ter. Há casos em que o atributo "placeholder" nunca é exibido para o usuário, portanto, o formulário deve ser inteligível sem ele. -->
+      <br>
+      <br>
+      <input type="text" name="nome" required>
+      <!-- Required = Este atributo especifica que o usuário deve preencher o campo com um valor antes de enviar o formulário. Ele não pode ser usado quando o atributo type está definido como [hidden], [image] ou um tipo de botão (submit, reset ou button). As pseudoclasses CSS [:optional] e [:required] serão aplicadas ao campo quando for apropriado. -->
+      <br>
+      <br>
+      <input type="text" name="nome" value="Não pode ser alterado." readonly>
+      <!-- Readonly = Indica que é somente leitura, logo, o usuário não pode modificar o valor deste campo. Além disso, essas informações serão enviadas junto com o Formulário. -->
+      <br>
+      <br>
+      <input type="text" name="nome" value="Não se aplica." disabled>
+      <!-- Disabled = Indica que o controle de formulário não está disponível para interação. Além disso, o valor de um controle desabilitado não é enviado com o formulário, logo, as informações deste campo serão perdidas ao submeter o formulário. -->
+      <br>
+      <br>
+      <input type="text" name="nome" placeholder="CEP" maxlength="8">
+      <!-- Maxlength = Limita o número de caracteres que o usuário poderá inserir. -->
+      <br>
+      <br>
+      <input type="submit" value="Enviar">
+      <!-- O tipo (type) "submit" cria um botão que envia o formulário.
+      Já "value" (ou valor, em pt-BR), é a inscrição do referido botão. -->
+    </form>
+  </body>
+</html>

@@ -5,27 +5,41 @@
   </head>
   <body>
     <form action="envio.php" method="post">
+      <!-- Form = Este elemento define um formulário. É um elemento de container como um elemento <div> ou <p>, mas ele também suporta alguns atributos específicos para configurar a forma como o formulário se comporta. Todos os seus atributos são opcionais, mas é considerada a melhor prática sempre definir pelo menos o atributo [action] e o atributo [method]. 
+      Action = O atributo [action] define o local (uma URL) em que os dados recolhidos do formulário devem ser enviados. 
+      Method = O atributo [method] define qual o método HTTP para enviar os dados (ele pode ser "GET" ou "POST").
+      GET = As requisições do tipo [GET] são recomendadas para receber dados de um determinado recurso. Comum em formulários de busca ou em uma listagem de todos os produtos cadastrados num banco de dados.
+      POST = As requisições do tipo [POST] são mais utilizadas para enviar informações a serem processadas, como por exemplo, criar algum recurso, como um produto ou um cliente.  -->
       <input type="text" name="nome">
       <br>
       <br>
       <input type="checkbox" name="temcarro"> Eu tenho um carro
+      <!-- Checkbox = São as caixinhas de selecionar uma determinada opção. -->
       <br>
       <br>
       Data de aniversário <input type="date" name="aniversario">
+      <!-- Date = Permite criar um calendário escolhendo a data desejada. -->
       <br>
       <br>
       <input type="radio" name="sexo" value="masculino">Masculino
       <input type="radio" name="sexo" value="feminino">Feminino
       <input type="radio" name="sexo" value="outro">Outro
+      <!-- Radio = Cria um botão de escolha. Você deve usar o atributo [value] para definir o valor a ser enviado por este item. Use o atributo [checked] para indicar se este item deve estar selecionado por padrão. Botões de escolha que têm o mesmo valor para o atributo [name] estão no mesmo "grupo de botões de escolha"; apenas um botão de escolha no grupo pode estar selecionado de cada vez.  -->
       <br>
       <br>
       <textarea cols="30" rows="10"></textarea>
+      <!-- Textarea = Cria um campo de entrada para mensagens de várias linhas, podendo ter sua altura e largura predefinidos, porém, facilmente ajustável conforme o tamanho do texto.
+      Cols = Colunas (em pt-BR), determina a largura da caixa de texto.
+      Rows = Linhas (em pt-BR), determina a altura da caixa de texto.  -->
       <br>
       <br>
       <input type="password" name="Senha">
+      <!-- Password = Cria um campo de texto com uma só linha cujo valor é obscurecido (os caracters são substituidos por * [asterísticos], escondendo desta forma a senha fornecida pelo usuário)  -->
       <br>
       <br>
       <input type="submit" value="Enviar">
+      <!-- O tipo (ou type, em pt-BR) "submit" cria um botão de envio do formulário.
+      Já "value" (ou valor, em pt-BR), é o que estará escrito no referido botão. -->
     </form>
   </body>
 </html>
